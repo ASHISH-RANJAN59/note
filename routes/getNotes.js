@@ -3,10 +3,6 @@ const auth=require('../middleware/auth');
 const express=require('express');
 const router=express.Router();
 
-router.get('/',async(req,res)=>{
-  res.send("USE POSTMAN WITH VALID x-Auth-Token GOT AFTER LOGIN");
-});
-
 //Only allowed if user is registered or logged in.
 //To display all notes.
 router.get('/',auth,async(req,res)=>{
