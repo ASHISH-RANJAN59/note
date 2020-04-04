@@ -9,4 +9,6 @@ task
 
 
 * On cd prompt write *node index.js*
-### Server is created on localhost:3000
+### Server is created on localhost:3000.
+
+#### Dump Database for Node-app is in note folder.
