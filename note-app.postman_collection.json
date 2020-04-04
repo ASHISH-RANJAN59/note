@@ -1,0 +1,161 @@
+{
+	"variables": [],
+	"info": {
+		"name": "note-app",
+		"_postman_id": "2b035d3b-20cb-ef43-542f-32b190bd3d04",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"url": "http://localhost:3000/register/user_registered",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-Auth-Token",
+						"value": "",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n\t\"name\":\"\",\n\t\"email\":\"\",\n\t\"password\":\"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "add note",
+			"request": {
+				"url": "http://localhost:3000/newNote/note_added",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-Auth-Token",
+						"value": "",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Title\":\"a\",\n\t\"Message\":\"abc\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"request": {
+				"url": "http://localhost:3000/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"\",\n\t\"password\":\"\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all notes",
+			"request": {
+				"url": "http://localhost:3000/getNote",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-Auth-Token",
+						"value": "",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "edit note",
+			"request": {
+				"url": "http://localhost:3000/editNote/5e87448198fbe3919858354b",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-Auth-Token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTg4MzAxZjcwNzJlNjZmNDA1N2Q2OGUiLCJpYXQiOjE1ODU5ODM1MTl9.1dSiP-4qDUGSGRFsHUU4kX4w9H1_hX4181Bfzkfv2FM",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Title\":\"hii\",\n\t\"Message\":\"hii\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete note",
+			"request": {
+				"url": "http://localhost:3000/deleteNote/5e87448198fbe3919858354b",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-Auth-Token",
+						"value": "",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "upload file",
+			"request": {
+				"url": "http://localhost:3000/uploadfile/uploaded",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "foo",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
