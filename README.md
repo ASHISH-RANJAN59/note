@@ -1,7 +1,7 @@
 # note
 task
-## To start the note-app
-* On cd prompt write *npm init --yes*
+## To start the note-app download the dependencies
+* On cd prompt write *npm install*
 
 
 **Set custom-environment-variables**
